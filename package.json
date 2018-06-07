@@ -1,27 +1,28 @@
 {
-    "name": "case-snippets",
-    "private": true,
+    "name": "filename-snippets",
+    "displayName": "Filename Snippets",
+    "version": "0.0.1",
     "publisher": "natemoo-re",
-    "displayName": "case-snippets",
-    "description": "Test",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/natemoo-re/vscode-snippet-transforms.git"
-    },
-    "version": "0.1.0",
     "engines": {
-        "vscode": "^1.15.0"
+        "vscode": "^1.18.0"
     },
     "categories": [
-        "Snippets",
-        "Other"
+        "Snippets"
     ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "markdown",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+    "activationEvents": [ "*" ],
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "build": "tsc -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "tslint": "tslint -c tslint.json src/extension.ts"
+    },
+    "devDependencies": {
+        "typescript": "^2.1.4",
+        "vscode": "^1.1.17",
+        "@types/node": "^6.0.40"
+    },
+    "dependencies": {
+        "change-case": "^3.0.2"
     }
 }
