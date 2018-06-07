@@ -2,7 +2,7 @@
     "name": "filename-snippets",
     "displayName": "Filename Snippets",
     "description": "Snippets that insert the current filename in any format",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "natemoo-re",
     "engines": {
         "vscode": "^1.18.0"
@@ -10,7 +10,9 @@
     "categories": [
         "Snippets"
     ],
-    "activationEvents": [ "*" ],
+    "activationEvents": [
+        "*"
+    ],
     "main": "./out/extension",
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
