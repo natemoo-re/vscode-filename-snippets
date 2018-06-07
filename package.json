@@ -1,0 +1,27 @@
+{
+    "name": "case-snippets",
+    "private": true,
+    "publisher": "natemoo-re",
+    "displayName": "case-snippets",
+    "description": "Test",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/natemoo-re/vscode-snippet-transforms.git"
+    },
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Snippets",
+        "Other"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "markdown",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
